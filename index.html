@@ -1,0 +1,26 @@
+<html>
+    <!-- dentro do head apenas defino a linguagem o título-->
+    <head>
+        <meta charset="utf-8">
+        <title>Forum dos programadores</title>
+        <link href="recursos/style/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <!-- tudo o que aparece dentro da página tem de estar no body-->
+    <body>
+        <!-- cabeçalho maior do site -->
+        <h1>Bem-vindo ao Forum dos Programadores</h1>
+        
+        <form action="login.php" method="post">
+            Nick: <input type="text" size = "20" maxlength="20" name="nick">
+            <br><br>
+            Pass: <input type="password" size="20" maxlength="20" name="pass"><br><br>
+            <input type="submit" value="Entrar">
+            <br><br>
+            <input type="reset" value="Limpar">
+            <br><br>
+            <input type="button" value="Registar" 
+            onclick="window.open('registar.html', '_self')">
+        </form>
+        
+    </body>
+</html>

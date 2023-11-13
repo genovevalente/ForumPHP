@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Forum dos programadores</title>
+        <link href="recursos/style/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Registo de Utilizadores</h1>
+
+        <form action="registo.php" method="post" enctype="multipart/form-data"> 
+            Nick:<input type="text" size="20" name="nick" required><br/><br/>
+            Nome:<input type="text" size="100" name="nome" required><br/><br/>
+            E-mail:<input type="text" size="50" name="email" required><br/><br/>
+            <!--O type date permite que apareça um calendário-->
+            Data de Nascimento:<input type="date" size="10" name="data_nasc" required><br/><br/>
+            <!--O type password mostra * ao digitar a senha-->
+            Pass:<input type="password" size="20" name="pass" required><br/><br/>
+            Foto:<input type="file" name="ficheiro"><br><br>
+   
+            <input type="submit" value="Registar">
+            <input type="reset" value="Limpar">
+            <input type="button" value ="Voltar" onclick="window.history.go(-1)">
+        </form>        
+
+    </body>
+</html>
